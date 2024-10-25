@@ -1,0 +1,22 @@
+<div class="d-flex justify-content-center align-items-center">
+  <form class="p-4 border rounded shadow-sm" style="width: 400px;" (ngSubmit)="handleSubmit($event)">
+    <h2 class="text-center mb-4">Sign In</h2>
+    <div class="mb-3">
+      <label for="email" class="form-label">Email address</label>
+      <input type="email" class="form-control" id="email" [(ngModel)]="email" name="email" required>
+      <div class="form-text">We'll never share your email with anyone else.</div>
+    </div>
+    <div class="mb-3">
+      <label for="password" class="form-label">Password</label>
+      <input type="password" class="form-control" id="password" [(ngModel)]="password" name="password" required>
+    </div>
+    <div class="mb-3 form-check">
+      <input type="checkbox" class="form-check-input" id="rememberMe" [(ngModel)]="rememberMe">
+      <label class="form-check-label" for="rememberMe">Remember me</label>
+    </div>
+    <div class="mb-3 text-center">
+      <a (click)="redirectToForgot()" class="nav-link" style="cursor: pointer; font-size: 0.9em;">Forgot Password?</a>
+    </div>
+    <button type="submit" class="btn btn-primary w-100">Submit</button>
+  </form>
+</div>

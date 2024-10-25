@@ -1,0 +1,5 @@
+.active {
+    font-weight: bold;  /* Makes the active link bold */
+    color: #080808;     /* Changes color to Bootstrap primary */
+    text-decoration: underline; /* Underline the active link */
+}
