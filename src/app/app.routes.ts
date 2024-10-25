@@ -95,13 +95,16 @@ export const routes: Routes = [
 
                 
             ]
-           }
+           },
+
+
+           {
+            path:'unauthorised',
+            component:UnautorizedComponent
+        }
             
          
         ]
     },
-    {
-        path:'unauthorised',
-        component:UnautorizedComponent
-    }
+   
 ];

@@ -40,7 +40,7 @@ export class LoginComponent {
 
   handleSubmit(event: Event) {
     event.preventDefault(); // Prevent default form submission
-  
+  debugger
     // Simple validation
     if (this.email && this.password) {
       // Find the matching credentials
