@@ -1,1 +1,19 @@
-<p>product works!</p>
+<div class="container text-center bg-white p-3" >
+    <div class="row" style="cursor: pointer;">
+      <div class="col border-end fw-bold" (click)="selectTab('productlist')">
+        Product List
+      </div>
+      <div class="col border-end" (click)="selectTab('addproduct')">
+        Add Product
+      </div>
+      <div class="col">
+        Update Product
+      </div>
+    </div>
+  </div>
+  <div *ngIf="selectedTab === 'productlist' ">
+    <app-product-list></app-product-list>
+  </div>
+  <div *ngIf="selectedTab === 'addproduct' ">
+    <app-add-product></app-add-product>
+  </div>

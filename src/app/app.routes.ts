@@ -40,7 +40,7 @@ export const routes: Routes = [
         children: [ 
                
               {
-                    path:'',
+                    path:'superadmin',
                     canActivate:[superadminGuard],
                     children:[
                         {
@@ -69,7 +69,7 @@ export const routes: Routes = [
 
 
            {
-             path:'',
+             path:'admin',
              canActivate:[adminGuard],
             children:[
                 
@@ -87,7 +87,7 @@ export const routes: Routes = [
 
 
            {
-            path:'',
+            path:'exceutive',
             canActivate:[exceutiveGuard],
             children:[
                 

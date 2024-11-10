@@ -54,13 +54,13 @@ export class LoginComponent {
         // Redirect based on role
         switch (user.role) {
           case 'superadmin':
-            this.router.navigate(['/main/dashboard']);
+            this.router.navigate(['/main/superadmin/dashboard']);
             break;
           case 'admin':
-            this.router.navigate(['/main/dashboard']);
+            this.router.navigate(['/main/admin/dashboard']);
             break;
           case 'exceutive':
-            this.router.navigate(['/main/dashboard']);
+            this.router.navigate(['/main/exceutive/dashboard']);
             break;
           default:
             alert('Unknown role');
