@@ -1,0 +1,59 @@
+<div class="bg-white mt-2 h-100 p-2">
+    <p>Add-product works!</p>
+    <div class="d-flex flex-column gap-2">
+      <!-- First Row (Two columns) -->
+      <form (ngSubmit)="addsubCategory()">
+        <div class="row">
+          <div class="col-6">
+            <label for="subcategory_name">SubCategory Name</label>
+            <input
+              type="text"
+              id="subcategory_name"
+              class="form-control"
+              placeholder="Enter SubCategory Name"
+              aria-label="SubCategory Name"
+              aria-describedby="basic-addon1"
+              name="subcategory_name"
+              [(ngModel)]="subCategoryData.subcategory_name"    
+                  />
+          </div>
+          <div class="col-6">
+            <label for="subcategory_description">Description</label>
+            <textarea
+              id="subcategory_description"
+              class="form-control"
+              placeholder="Enter subCategory Description"
+              aria-label="subCategory Description"
+              aria-describedby="basic-addon2"
+              name="subCategoryData.subcategory_description"
+              [(ngModel)]="subCategoryData.subcategory_description"
+            ></textarea>
+          </div>
+        
+        </div>
+  
+        <!-- Second Row (Two columns) -->
+   
+        <div class="row">
+            <div class="col-6">
+                <label for="category_id"> Category Id</label>
+                <select
+                  id="category_id"
+                  class="form-control"
+                  placeholder=" Category id"
+                  aria-label="category_id"
+                  aria-describedby="basic-addon4"
+                  name="category_id"
+                  [(ngModel)]="subCategoryData.category_id"
+                >
+                  <option value="Tshirts">T Shirts</option>
+                  <option value="Shoes">Shoes</option>
+                  <option value="Pants">Pants</option>
+                </select>
+              </div>
+        </div>
+        <button type="submit" class="btn btn-success mt-3">Success</button>
+      </form>
+    </div>
+  </div>
+  

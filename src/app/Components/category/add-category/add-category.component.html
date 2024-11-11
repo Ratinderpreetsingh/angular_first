@@ -1,0 +1,44 @@
+<div class="bg-white mt-2 h-100 p-2">
+    <p>Add-product works!</p>
+    <div class="d-flex flex-column gap-2">
+      <!-- First Row (Two columns) -->
+      <form (ngSubmit)="addCategory()">
+        <div class="row">
+          <div class="col-6">
+            <label for="category_name">Category Name</label>
+            <input
+              type="text"
+              id="category_name"
+              class="form-control"
+              placeholder="Enter Category Name"
+              aria-label="Category Name"
+              aria-describedby="basic-addon1"
+              name="category_name"
+              [(ngModel)]="categoryData.category_name"    
+                  />
+          </div>
+  
+        
+        </div>
+  
+        <!-- Second Row (Two columns) -->
+   
+        <div class="row">
+          <div class="col-6">
+            <label for="category_description">Description</label>
+            <textarea
+              id="category_description"
+              class="form-control"
+              placeholder="Enter Category Description"
+              aria-label="Category Description"
+              aria-describedby="basic-addon2"
+              name="categoryData.category_description"
+              [(ngModel)]="categoryData.category_description"
+            ></textarea>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-success mt-3">Success</button>
+      </form>
+    </div>
+  </div>
+  

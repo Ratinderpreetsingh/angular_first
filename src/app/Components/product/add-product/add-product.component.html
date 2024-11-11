@@ -1,4 +1,89 @@
 <div class="bg-white mt-2 h-100 p-2">
+  <p>Add-product works!</p>
+  <div class="d-flex flex-column gap-2">
+    <!-- First Row (Two columns) -->
+    <form (ngSubmit)="addProduct()">
+      <div class="row">
+        <div class="col-6">
+          <label for="productName">Product Name</label>
+          <input
+            type="text"
+            id="productName"
+            class="form-control"
+            placeholder="Enter Product Name"
+            aria-label="Product Name"
+            aria-describedby="basic-addon1"
+            name="product_name"
+            [(ngModel)]="product.product_name"    
+                />
+        </div>
 
-    <p>add-product works!</p>
+        <div class="col-6">
+          <label for="productPrice">Price</label>
+          <input
+            type="number"
+            id="productPrice"
+            class="form-control"
+            placeholder="Enter Price"
+            aria-label="Product Price"
+            aria-describedby="basic-addon3"
+            name="product_price"
+            [(ngModel)]="product.product_price"
+          />
+        </div>
+      </div>
+
+      <!-- Second Row (Two columns) -->
+      <div class="row">
+        <div class="col-6">
+          <label for="subcategory">Sub Category</label>
+          <select
+            id="subcategory"
+            class="form-control"
+            placeholder="Enter Product Category"
+            aria-label="Product Category"
+            aria-describedby="basic-addon4"
+            name="product_subcategory"
+            [(ngModel)]="product.product_subcategory"
+          >
+            <option value="Tshirts">T Shirts</option>
+            <option value="Shoes">Shoes</option>
+            <option value="Pants">Pants</option>
+          </select>
+        </div>
+        <div class="col-6">
+          <label for="productCategory">Category</label>
+          <select
+            id="productCategory"
+            class="form-control"
+            placeholder="Enter Product Category"
+            aria-label="Product Category"
+            aria-describedby="basic-addon4"
+            name="product_category"
+            [(ngModel)]="product.product_category"
+          >
+            <option>Men</option>
+            <option>Women</option>
+            <option>Kids</option>
+          </select>
+        </div>
+      </div>
+      <!-- third row -->
+      <div class="row">
+        <div class="col-6">
+          <label for="productDescription">Description</label>
+          <textarea
+            id="productDescription"
+            class="form-control"
+            placeholder="Enter Product Description"
+            aria-label="Product Description"
+            aria-describedby="basic-addon2"
+            name="product.product_description"
+            [(ngModel)]="product.product_description"
+          ></textarea>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-success mt-3">Success</button>
+    </form>
+  </div>
 </div>

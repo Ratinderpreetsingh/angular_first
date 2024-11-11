@@ -1,0 +1,19 @@
+<div class="container-fuild text-center bg-white p-3" >
+    <div class="row" style="cursor: pointer;">
+      <div class="col border-end fw-bold" (click)="selectTab('subcategorylist')">
+        subcategory List
+      </div>
+      <div class="col border-end" (click)="selectTab('addsubcategory')">
+        Add subcategory
+      </div>
+      <div class="col">
+        Update subcategory
+      </div>
+    </div>
+  </div>
+  <div *ngIf="selectedTab === 'subcategorylist' ">
+    <app-sub-category-list></app-sub-category-list>
+</div>
+  <div *ngIf="selectedTab === 'addsubcategory' ">
+    <app-add-sub-category></app-add-sub-category>
+</div>

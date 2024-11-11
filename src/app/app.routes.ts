@@ -13,6 +13,8 @@ import { superadminGuard } from './guards/superadmin.guard';
 import { adminGuard } from './guards/admin.guard';
 import { exceutiveGuard } from './guards/exceutive.guard';
 import { UnautorizedComponent } from './Components/unautorized/unautorized.component';
+import { SubCategoryComponent } from './Components/sub-category/sub-category.component';
+import { CustomerComponent } from './Components/customer/customer.component';
 
 export const routes: Routes = [
     { path: '', redirectTo: 'auth/login', pathMatch: 'full' }, // Redirect root to dashboard
@@ -48,12 +50,21 @@ export const routes: Routes = [
                             component: DashboardComponent, 
                         },
                         {
+                            path: 'customer',
+                            component: CustomerComponent,
+
+                        },
+                        {
                             path: 'product',
                             component: ProductComponent,
                         },
                         {
                             path: 'category',
                             component: CategoryComponent,
+                        },
+                        {
+                            path: 'subcategory',
+                            component: SubCategoryComponent,
                         },
                         {
                             path: 'order',

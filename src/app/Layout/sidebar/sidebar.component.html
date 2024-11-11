@@ -2,8 +2,12 @@
     <h1>LOGO</h1>
     <ul class="d-flex flex-column" *ngIf="isSuperadmin()">
         <li class="mb-2"><a routerLink="superadmin/dashboard" class="text-dark text-decoration-none">dashboard</a></li>
+        <li class="mb-2"><a routerLink="superadmin/customer" routerLinkActive="active" class="text-dark text-decoration-none">Customer</a></li>
+       
         <li class="mb-2"><a routerLink="superadmin/product" routerLinkActive="active" class="text-dark text-decoration-none">Products</a></li>
         <li class="mb-2"><a routerLink="superadmin/category" routerLinkActive="active" class="text-dark text-decoration-none">Category</a></li>
+        <li class="mb-2"><a routerLink="superadmin/subcategory" routerLinkActive="active" class="text-dark text-decoration-none">SubCategory</a></li>
+      
         <li class="mb-2"><a routerLink="superadmin/order" routerLinkActive="active" class="text-dark text-decoration-none">Orders</a></li>
         <li class="mb-2"><a routerLink="superadmin/about" routerLinkActive="active" class="text-dark text-decoration-none">About</a></li>
 

@@ -1,1 +1,19 @@
-<p>category works!</p>
+<div class="container-fuild text-center bg-white p-3" >
+    <div class="row" style="cursor: pointer;">
+      <div class="col border-end fw-bold" (click)="selectTab('Categorylist')">
+        Category List
+      </div>
+      <div class="col border-end" (click)="selectTab('addCategory')">
+        Add Category
+      </div>
+      <div class="col">
+        Update Category
+      </div>
+    </div>
+  </div>
+  <div *ngIf="selectedTab === 'Categorylist' ">
+    <app-category-list></app-category-list>
+  </div>
+  <div *ngIf="selectedTab === 'addCategory' ">
+ <app-add-category></app-add-category>
+</div>

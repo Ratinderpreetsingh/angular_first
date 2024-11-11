@@ -1,0 +1,29 @@
+<div class="bg-white mt-2 h-100 p-2">
+    <p>Add-Customer works!</p>
+    <div class="d-flex flex-column gap-2">
+      <!-- First Row (Two columns) -->
+      <form (ngSubmit)="addCustomer()">
+        <div class="row">
+          <div class="col-6">
+            <label for="customer_name">Customer Name</label>
+            <input
+              type="text"
+              id="customer_name"
+              class="form-control"
+              placeholder="Enter Customer Name"
+              aria-label="customer_name"
+              aria-describedby="basic-addon1"
+              name="customer_name"
+              [(ngModel)]="customerData.customer_name"    
+                  />
+          </div>
+  
+        
+        </div>
+  
+      
+        <button type="submit" class="btn btn-success mt-3">Success</button>
+      </form>
+    </div>
+  </div>
+  

@@ -1,0 +1,17 @@
+<div class="container-fuild text-center bg-white p-3">
+  <div class="row" style="cursor: pointer">
+    <div class="col border-end fw-bold" (click)="selectTab('Customerlist')">
+      Customer List
+    </div>
+    <div class="col border-end" (click)="selectTab('addCustomer')">
+      Add Customer
+    </div>
+    <div class="col">Update Customer</div>
+  </div>
+</div>
+<div *ngIf="selectedTab === 'Customerlist'">
+  <app-customer-list></app-customer-list>
+</div>
+<div *ngIf="selectedTab === 'addCustomer'">
+  <app-addcustomer></app-addcustomer>
+</div>
