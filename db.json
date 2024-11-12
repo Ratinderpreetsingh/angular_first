@@ -1,0 +1,29 @@
+{
+  "category": [
+    {
+      "id": 1,
+      "category_name": "Books",
+      "category_description": "All kinds of books"
+    },
+    {
+      "id": 2,
+      "category_name": "Electronics",
+      "category_description": "Gadgets and devices"
+    },
+    {
+      "id": 3,
+      "category_name": "Clothing",
+      "category_description": "Men and Women clothing"
+    },
+    {
+      "id": "b9ac",
+      "category_name": "NEw",
+      "category_description": "sd"
+    },
+    {
+      "id": "3438",
+      "category_name": "Kids",
+      "category_description": "Des"
+    }
+  ]
+}
