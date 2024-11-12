@@ -3,24 +3,19 @@
         <thead>
             <tr class="fw-bold">
                 <td>Id</td>
-                <td>Product Name</td>
+                <td>Categoy NAme Name</td>
                 <td>Product Description</td>
-                <td>Product Price</td>
-                <td>Subcategory</td>
-                <td>Category</td>
-
+              
 
             </tr>
         </thead>
         <tbody>
-            <tr>
+            <tr *ngFor="let value of category">
+              
                 <td>1</td>
-                <td>Mahra ranji</td>
-                <td>kljfs</td>
-                <td>499</td>
-                <td>Tshirs</td>
-                <td>Men</td>
-
+                <td>{{value?.category_name}}</td>
+                <td>{{value?.category_description}}</td>
+             
 
             </tr>
         </tbody>
