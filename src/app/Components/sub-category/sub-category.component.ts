@@ -2,6 +2,8 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { SubCategoryListComponent } from './sub-category-list/sub-category-list.component';
 import { AddSubCategoryComponent } from './add-sub-category/add-sub-category.component';
+import { LoadingService } from '../../Services/loading/loading.service';
+import { LoadingComponent } from '../../Common/loading/loading.component';
 
 @Component({
   selector: 'app-sub-category',
@@ -12,6 +14,7 @@ import { AddSubCategoryComponent } from './add-sub-category/add-sub-category.com
 })
 export class SubCategoryComponent {
   selectedTab:string = 'subcategorylist'
+  
   selectTab(tab:string):void{
     this.selectedTab = tab
   }

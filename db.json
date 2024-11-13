@@ -25,5 +25,19 @@
       "category_name": "Kids",
       "category_description": "Des"
     }
+  ],
+  "subcategory": [
+    {
+      "id": 1,
+      "subcategory_name": "Ovarzied thshits",
+      "subcategory_description": "this is ovesized ",
+      "category_id": 2
+    },
+    {
+      "id": "b131",
+      "subcategory_name": "fg",
+      "subcategory_description": "fg",
+      "category_id": "2"
+    }
   ]
 }

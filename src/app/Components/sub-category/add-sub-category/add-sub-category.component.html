@@ -38,18 +38,21 @@
             <div class="col-6">
                 <label for="category_id"> Category Id</label>
                 <select
-                  id="category_id"
-                  class="form-control"
-                  placeholder=" Category id"
-                  aria-label="category_id"
-                  aria-describedby="basic-addon4"
-                  name="category_id"
-                  [(ngModel)]="subCategoryData.category_id"
-                >
-                  <option value="Tshirts">T Shirts</option>
-                  <option value="Shoes">Shoes</option>
-                  <option value="Pants">Pants</option>
-                </select>
+                id="category_id"
+                class="form-control"
+                placeholder="Category id"
+                aria-label="category_id"
+                aria-describedby="basic-addon4"
+                name="category_id"
+                [(ngModel)]="subCategoryData.category_id"
+              >
+                <option value="">Select a Category</option>
+                <option *ngFor="let category of catgoryList" [value]="category?.id">
+                  {{ category?.category_name }}
+                </option>
+              </select>
+              
+              
               </div>
         </div>
         <button type="submit" class="btn btn-success mt-3">Success</button>

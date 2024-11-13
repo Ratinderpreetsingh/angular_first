@@ -6,12 +6,13 @@ import { CategoryComponent } from './Components/category/category.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ProductService } from './Services/product/product.service';
 import { CategoryService } from './Services/category/category.service';
+import { SubcategoryService } from './Services/subcategory/subcategory.service';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [RouterOutlet,HttpClientModule],
-  providers: [ProductService,CategoryService],
+  providers: [ProductService,CategoryService,SubcategoryService],
 
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'

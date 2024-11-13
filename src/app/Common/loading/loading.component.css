@@ -1,0 +1,22 @@
+
+.overlay{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.loader {
+    border: 8px solid #f3f3f3;  /* Light grey background for the spinner */
+    border-top: 8px solid aqua;  /* Aqua color for the spinner's top */
+    border-radius: 50%;  /* Make the spinner circular */
+    width: 50px;  /* Size of the loader */
+    height: 50px;
+    animation: spin 1s linear infinite;  /* Animate the spinner */
+  }
+  
+  /* Keyframe animation to spin the loader */
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  

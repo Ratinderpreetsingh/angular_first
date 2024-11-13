@@ -1,6 +1,10 @@
 <div class="container-fuild text-center bg-white p-3" >
     <div class="row" style="cursor: pointer;">
-      <div class="col border-end fw-bold" (click)="selectTab('subcategorylist')">
+      <div  [ngClass]="{
+        'col': true, 
+        'border-end': true, 
+        'fw-bold': selectedTab === 'subcategorylist', 
+      }" (click)="selectTab('subcategorylist')">
         subcategory List
       </div>
       <div class="col border-end" (click)="selectTab('addsubcategory')">
