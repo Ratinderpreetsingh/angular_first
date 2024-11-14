@@ -39,5 +39,45 @@
       "subcategory_description": "fg",
       "category_id": "2"
     }
+  ],
+  "products": [
+    {
+      "product_name": "Example Product",
+      "product_description": "This is a detailed description of the example product.",
+      "product_price": 19.99,
+      "product_category": "Electronics",
+      "product_subcategory": "Accessories"
+    },
+    {
+      "product_name": "Another Product",
+      "product_description": "A description for another product.",
+      "product_price": 29.99,
+      "product_category": "Home & Garden",
+      "product_subcategory": "Furniture"
+    },
+    {
+      "id": "7948",
+      "product_name": "Cally Knox",
+      "product_description": "Obcaecati sint ea do",
+      "product_price": 700,
+      "product_category": "Men",
+      "product_subcategory": "Shoes"
+    },
+    {
+      "id": "4609",
+      "product_name": "Haley Fitzpatrick",
+      "product_description": "Eos maxime eveniet ",
+      "product_price": 36,
+      "product_category": "Women",
+      "product_subcategory": "Tshirts"
+    },
+    {
+      "id": "aa65",
+      "product_name": "Kylee Kirk",
+      "product_description": "Adipisicing eos min",
+      "product_price": 738,
+      "product_category": "Men",
+      "product_subcategory": "Pants"
+    }
   ]
 }

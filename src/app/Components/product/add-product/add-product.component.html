@@ -82,6 +82,11 @@
             [(ngModel)]="product.product_description"
           ></textarea>
         </div>
+        <div class="col-6">
+          <label for="image">Image</label>
+          <input type="file" (change)="uplaodImage($event)"/>
+          <img [src]="imageUrl" width="400" height="200" priority>
+        </div>
       </div>
       <button type="submit" class="btn btn-success mt-3">Success</button>
     </form>

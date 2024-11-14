@@ -7,10 +7,14 @@ import { Product } from '../../models/product.model';
   providedIn: 'root'
 })
 export class ProductService {
-private apiUrl ='https://jsonplaceholder.typicode.com/posts'
+private apiUrl ='http://localhost:3000/products'
   constructor(private http:HttpClient) { }
 
   getProducts():Observable<Product[]>{
     return this.http.get<Product[]>(this.apiUrl)
+  }
+
+  createProduct(product:Product):Observable<Product[]>{
+    return this.http.post<Product[]>(this.apiUrl,product)
   }
 }

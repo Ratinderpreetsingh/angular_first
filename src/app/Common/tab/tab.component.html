@@ -1,0 +1,9 @@
+<div class="container-fuild text-center bg-white p-3" >
+    <div class="row" style="cursor: pointer;">
+      <div class="col border-end fw-bold" *ngFor="let tab of tabs"         (click)="onTabClick(tab.value)" 
+      >
+        {{tab?.label}}
+      </div>
+     
+    </div>
+  </div>

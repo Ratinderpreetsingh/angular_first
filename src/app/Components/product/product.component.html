@@ -15,5 +15,5 @@
     <app-product-list></app-product-list>
   </div>
   <div *ngIf="selectedTab === 'addproduct' ">
-    <app-add-product></app-add-product>
+    <app-add-product [selectTab]="selectTab"></app-add-product>
   </div>

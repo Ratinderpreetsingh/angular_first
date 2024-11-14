@@ -1,6 +1,7 @@
 export interface Product {
-    userId?: number;
-    id: number;
-    title: string;
-    bodey: string; // Reference to category
+  product_name: string,
+  product_description: string,
+  product_price: number | string,
+  product_category:string,
+  product_subcategory:string
   }

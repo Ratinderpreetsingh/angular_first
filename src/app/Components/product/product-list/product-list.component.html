@@ -13,13 +13,13 @@
             </tr>
         </thead>
         <tbody>
-            <tr>
+            <tr *ngFor="let value of products">
                 <td>1</td>
-                <td>Mahra ranji</td>
-                <td>kljfs</td>
-                <td>499</td>
-                <td>Tshirs</td>
-                <td>Men</td>
+                <td>{{value?.product_name}}</td>
+                <td>{{value?.product_description}}</td>
+                <td>{{value?.product_price}}</td>
+                <td>{{value?.product_subcategory}}</td>
+                <td>{{value?.product_category}}</td>
 
 
             </tr>
