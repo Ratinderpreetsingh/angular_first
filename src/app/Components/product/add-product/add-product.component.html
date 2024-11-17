@@ -35,37 +35,47 @@
 
       <!-- Second Row (Two columns) -->
       <div class="row">
+        
+        
+
         <div class="col-6">
-          <label for="subcategory">Sub Category</label>
+          <label for="product_subcategory"> product_subcategory</label>
           <select
-            id="subcategory"
-            class="form-control"
-            placeholder="Enter Product Category"
-            aria-label="Product Category"
-            aria-describedby="basic-addon4"
-            name="product_subcategory"
-            [(ngModel)]="product.product_subcategory"
-          >
-            <option value="Tshirts">T Shirts</option>
-            <option value="Shoes">Shoes</option>
-            <option value="Pants">Pants</option>
-          </select>
+          id="product_subcategory"
+          class="form-control"
+          placeholder="Category id"
+          aria-label="product_subcategory"
+          aria-describedby="basic-addon4"
+          name="product_subcategory"
+          [(ngModel)]="product.product_subcategory"
+        >
+          <!-- <option value="">Select a Category</option> -->
+          <option *ngFor="let subcategory of subCatgoryList" [value]="subcategory?.subcategory_id">
+            {{ subcategory?.subcategory_name }}
+          </option>
+        </select>
+        
+        
         </div>
+
         <div class="col-6">
-          <label for="productCategory">Category</label>
+          <label for="productCategory"> Category Id</label>
           <select
-            id="productCategory"
-            class="form-control"
-            placeholder="Enter Product Category"
-            aria-label="Product Category"
-            aria-describedby="basic-addon4"
-            name="product_category"
-            [(ngModel)]="product.product_category"
-          >
-            <option>Men</option>
-            <option>Women</option>
-            <option>Kids</option>
-          </select>
+          id="productCategory"
+          class="form-control"
+          placeholder="Category id"
+          aria-label="productCategory"
+          aria-describedby="basic-addon4"
+          name="productCategory"
+          [(ngModel)]="product.product_category"
+        >
+          <!-- <option value="">Select a Category</option> -->
+          <option *ngFor="let category of catgoryList" [value]="category?.category_id">
+            {{ category?.category_name }}
+          </option>
+        </select>
+        
+        
         </div>
       </div>
       <!-- third row -->

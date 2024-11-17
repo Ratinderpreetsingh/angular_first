@@ -20,8 +20,8 @@ export class ProductListComponent {
 
   private fetchProducts(): void {
     this.productService.getProducts().subscribe(
-      (data: Product[]) => {
-        this.products = data;
+      (data) => {
+        this.products = data?.products;
         console.log(this.products);
       },
       (error) => {

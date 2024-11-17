@@ -19,7 +19,8 @@ export class CategoryListComponent {
    ngOnInit():void{
     this.catgoryService.getAllCategoires().subscribe(
       (catgoories)=>{
-        return this.category =catgoories
+        console.log("categories0",catgoories)
+        return this.category =catgoories?.category
       },
       (error)=>{
         console.log(error)

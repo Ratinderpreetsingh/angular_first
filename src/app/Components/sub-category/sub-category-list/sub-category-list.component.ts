@@ -19,7 +19,7 @@ export class SubCategoryListComponent {
     this.subcategoryService.getAllSubcategory().subscribe(
       (subcategories)=>{
         console.log(subcategories)
-        return this.subcategoryList =subcategories
+        return this.subcategoryList =subcategories?.subcategory
       },
       (error)=>{
         console.log(error)

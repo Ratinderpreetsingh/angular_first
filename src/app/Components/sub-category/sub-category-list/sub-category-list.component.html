@@ -13,8 +13,8 @@
         <tbody>
             <app-loading></app-loading>
             <tr *ngFor="let value of subcategoryList" >
-                <td>1</td>
-                <td>{{value.subcategory_name}}</td>
+                <td>{{value?.subcategory_id}}</td>
+                <td>{{value?.subcategory_name}}</td>
                 <td>{{value?.subcategory_description}}</td>
                 <td>{{value?.category_id}}</td>
                 

@@ -28,7 +28,7 @@ export class AddSubCategoryComponent {
        this.categoryService.getAllCategoires().subscribe(
         (cateory)=>{
           console.log(cateory)
-          return this.catgoryList = cateory
+          return this.catgoryList = cateory?.category
         }
        )
     }

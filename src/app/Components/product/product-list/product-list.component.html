@@ -14,12 +14,11 @@
         </thead>
         <tbody>
             <tr *ngFor="let value of products">
-                <td>1</td>
+                <td>{{value?.product_id}}</td>
                 <td>{{value?.product_name}}</td>
                 <td>{{value?.product_description}}</td>
                 <td>{{value?.product_price}}</td>
                 <td>{{value?.product_subcategory}}</td>
-                <td>{{value?.product_category}}</td>
 
 
             </tr>

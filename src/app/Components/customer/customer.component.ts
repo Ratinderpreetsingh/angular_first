@@ -11,7 +11,7 @@ import { AddcustomerComponent } from "./addcustomer/addcustomer.component";
   styleUrl: './customer.component.css'
 })
 export class CustomerComponent {
-  selectedTab:string ='CustomerList'
+  selectedTab:string ='Customerlist'
 
   selectTab(tab:string){
      this.selectedTab = tab

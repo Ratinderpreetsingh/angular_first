@@ -13,31 +13,15 @@ import { AddProductComponent } from './add-product/add-product.component';
   templateUrl: './product.component.html',
   styleUrls: ['./product.component.css'],
 })
-export class ProductComponent implements OnInit {
-  products: Product[] = [];
-  errorMessage: string | null = null;
+export class ProductComponent  {
+ 
   selectedTab:string = 'productlist';
 
-  constructor(private productService: ProductService) {}
+
 
   selectTab(tab:string):void{
     this.selectedTab = tab
   }
    
-  ngOnInit(): void {
-    this.fetchProducts();
-  }
-
-  private fetchProducts(): void {
-    this.productService.getProducts().subscribe(
-      (data: Product[]) => {
-        this.products = data;
-        console.log(this.products);
-      },
-      (error) => {
-        this.errorMessage = 'Failed to load products';
-        console.error('Error loading products:', error);
-      }
-    );
-  }
+ 
 }

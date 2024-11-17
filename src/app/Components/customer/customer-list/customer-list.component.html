@@ -1,1 +1,25 @@
-<p>customer-list works!</p>
+<div class="bg-white mt-2 h-100 p-2">
+    <table class="container-fluid">
+        <thead>
+            <tr class="fw-bold">
+                <td>Id</td>
+                <td>Subcategory Name</td>
+                <td>Subcategory Description</td>
+                <td>category Id</td>
+
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let value of CustomerList" >
+                <td>1</td>
+                <td>{{value?.customer_id}}</td>
+                <td>{{value?.customer_name}}</td>
+                <td>{{value?.customer_email}}</td>
+                
+
+
+            </tr>
+        </tbody>
+    </table>
+</div>

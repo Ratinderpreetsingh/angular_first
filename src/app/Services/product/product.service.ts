@@ -7,14 +7,14 @@ import { Product } from '../../models/product.model';
   providedIn: 'root'
 })
 export class ProductService {
-private apiUrl ='http://localhost:3000/products'
+private apiUrl ='http://localhost:4000/api/product'
   constructor(private http:HttpClient) { }
 
-  getProducts():Observable<Product[]>{
-    return this.http.get<Product[]>(this.apiUrl)
+  getProducts():Observable<{message:'String',products:Product[]}>{
+    return this.http.get<{message:'String',products:Product[]}>(`${this.apiUrl}/getAllProduct`)
   }
 
   createProduct(product:Product):Observable<Product[]>{
-    return this.http.post<Product[]>(this.apiUrl,product)
+    return this.http.post<Product[]>(`${this.apiUrl}/createProduct`,product)
   }
 }

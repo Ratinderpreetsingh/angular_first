@@ -7,16 +7,16 @@ import { Subcategory } from '../../models/subcategory.model';
   providedIn: 'root'
 })
 export class SubcategoryService {
-  private apiUrl =`http://localhost:3000/subcategory`
+  private apiUrl =`http://localhost:4000/api/subcategory`
   constructor(private http:HttpClient) {}
 
   // get all subcategorues
-  getAllSubcategory():Observable<Subcategory[]>{
-    return this.http.get<Subcategory[]>(this.apiUrl)
+  getAllSubcategory():Observable<{message:'String',subcategory:Subcategory[]}>{
+    return this.http.get<{message:'String',subcategory:Subcategory[]}>(`${this.apiUrl}/getSubCategory`)
   }
   
   // createSubCategores
   createSubCategory(subcategory:Subcategory):Observable<Subcategory[]>{
-    return this.http.post<Subcategory[]>(this.apiUrl,subcategory)
+    return this.http.post<Subcategory[]>(`${this.apiUrl}/createSubCategory`,subcategory)
   }
 }
